@@ -1,0 +1,74 @@
+.Board {
+  margin: 0 auto;
+  margin-top: 4rem;
+  border-radius: 10px;
+  box-shadow: 0 0 50px #fff, -10px 0 80px #fff6d8, 10px 0 80px #f6bb10;
+}
+
+table tr:first-child td:first-child {
+  border-radius: 10px 0 0 0 !important;
+}
+table tr:first-child td:last-child {
+  border-radius: 0 10px 0 0 !important;
+}
+table tr:last-child td:first-child {
+  border-radius: 0 0 0 10px !important;
+}
+table tr:last-child td:last-child {
+  border-radius: 0 0 10px 0 !important;
+}
+
+.Board-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.glow-orange {
+  color: #effb42;
+  font-size: 80px;
+  text-shadow: 0 0 3vw #f0f40a;
+  animation: glow-orange 6s ease infinite;
+  -moz-animation: glow-orange 6s ease infinite;
+  -webkit-animation: glow-orange 6s ease infinite;
+}
+
+.glow-blue {
+  color: #42d0fb;
+  font-size: 80px;
+  text-shadow: 0 0 3vw #23fff4;
+  animation: glow-blue 5s linear infinite;
+  -moz-animation: glow-blue 5s linear infinite;
+  -webkit-animation: glow-blue 5s linear infinite;
+  -o-animation: glow-blue 5s linear infinite;
+}
+
+.glow-blue, .glow-orange {
+  font-family: 'Dancing Script', cursive;
+}
+
+.winner .glow-blue,
+.winner .glow-orange {
+  font-size: 160px;
+}
+
+@keyframes glow-orange {
+  0%,
+  100% {
+    color: #a2ded0;
+  }
+  50% {
+    color: #807f7e;
+  }
+}
+
+@keyframes glow-blue {
+  0%,
+  100% {
+    color: #28d7fe;
+  }
+  50% {
+    color: #146c80;
+  }
+}
